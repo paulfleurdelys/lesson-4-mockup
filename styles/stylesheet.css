@@ -1,6 +1,6 @@
 body {
-    background-color: whitesmoke;
-    font-family: sans-serif;
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
     align-items: center;
     line-height: 1.5rem;
 }
@@ -13,32 +13,29 @@ body {
 
 .main-content {
     float: left;
-    background-color: #F09A9D;
+    background-color: #ffffff;
 
 }
 
-.main-content-paragraph {
-}
 
 .main-content-header {
-
+    color: #2f9db5;
 }
 
 .main-content-quotation {
+    font-style: italic;
+    color: #2f9db5;
 
 }
 
 .secondary-content {
     float: left;
-    background-color: #F5CF8E; 
+    background-color: #ffffff;
 }
 
-.secondary-content-paragraph {
-
-}
 
 .secondary-content-header {
-
+    color: #3c3c3c;
 }
 
 .header-banner {
@@ -46,12 +43,44 @@ body {
     width: 100%;
 }
 
+nav {
+    padding: 1em;
+}
+
+.header-text-buffer-wrapper {
+    padding: 1em;
+}
+
+.header-text-heading {
+    color: #ffffff;
+    font-size: xx-large;
+
+}
+
+.header-text-paragraph {
+    color: #ffffff;
+    font-size: large;
+    font-style: italic;
+    width: 80%;
+}
+
+.header-text {
+    position: absolute;
+    padding-left: 15%;
+    padding-right: 15%;
+    top: 5em;
+}
+
+.header-nav-container {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
 .header-nav {
-    padding-left: 10%;
-    padding-right: 10%;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    background-color: gray;
+    font-weight: bold;
+    color: #3c3c3c;
 }
 
 .footer-banner {
@@ -71,6 +100,11 @@ body {
     bottom: 17em;
 }
 
+.footer-paragraph {
+    color: #ffffff;
+
+}
+
 .side-image {
     display: block;
     max-width: 100%;
@@ -80,12 +114,14 @@ body {
 aside {
     float: right;
     max-width: 256px;
-    background-color: #F09A9D; 
+    background-color: #ffffff;
     padding: 1em;
 }
 
 header {
     display: block;
+    background-color: #e4e7e8;
+
 }
 
 article {
@@ -107,7 +143,38 @@ footer {
     padding: 1em;
     margin: 0 auto;
     text-align: center;
+    background-color: #3c3c3c;
 
 
 }
 
+a {
+    text-decoration: none;
+}
+
+nav > a:visited { text-decoration: none; color: #3c3c3c;
+}
+nav > a:hover { text-decoration: none; color: #3c3c3c;
+}
+nav > a:focus { text-decoration: none; color: #3c3c3c;
+}
+nav > a:hover, a:active { text-decoration: none; color: #3c3c3c;
+}
+
+aside > p > a:visited { text-decoration: none; color: #2f9db5;
+}
+aside > p > a:hover { text-decoration: none; color: #2f9db5;
+}
+aside > p > a:focus { text-decoration: none; color: #2f9db5;
+}
+aside > p > a:hover, a:active { text-decoration: none; color: #2f9db5;
+}
+
+p {
+    color: #3c3c3c;
+}
+
+h3 {
+    color: #3c3c3c;
+
+}
