@@ -17,6 +17,12 @@ body {
 
 }
 
+.main-content-form {
+    padding: 1em;
+    float: left;
+    width: 67%;
+}
+
 
 .main-content-header {
     color: #2f9db5;
@@ -119,6 +125,12 @@ nav {
     max-width: 100%;
 }
 
+form {
+    background-color: #e4e7e8;
+    padding: 1em;
+    width: 50%;
+}
+
 
 aside {
     float: right;
@@ -136,6 +148,7 @@ header {
 article {
     padding: 1em;
 }
+
 
 main {
     display: block;
