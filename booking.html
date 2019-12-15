@@ -17,11 +17,11 @@
       <img class="header-banner" src="static/lesson04-mock2-banner-image.jpg" alt="cat banner">
       <section class="header-nav-container">
         <nav class="header-nav">
-            <a href="">About&nbsp;</a> / 
+            <a href="index.html">About&nbsp;</a> / 
             <a href="">&nbsp;Rates&nbsp;</a>  / 
             <a href="">&nbsp;Liability Release &nbsp;</a>  / 
             <a href="">&nbsp;Kitty Profiles&nbsp;</a>  / 
-            <a href="">&nbsp;Book a Cat </a>
+            <a href="booking.html">&nbsp;Book a Cat </a>
         </nav>
       </section>
     </header>
@@ -31,15 +31,22 @@
         <p>Fill out the form below to book a cat in our system!</p>
         </article>
         <form>
-          <input type="email" />
-          <input type="submit" />
-        </form>
-
-        <form>
+          <label for="name">Your Name</label>
+          <input id="name" type="text" /><br>
+          <label for="email">Your Email</label>
+          <input id="email" type="email" /><br>
+          <div class="button-wrapper"><select name="cat-list">
+            <option value="Fuzzy">Fuzzy</option>
+            <option value="Fluffy">Fluffy</option>
+            <option value="Furball">Furball</option>
+            <option value="Cat Sajak">Cat Sajak</option>
+            </select></div>
+          <label for="pickup-time">Pickup Time</label>
+          <input type="time" id="pickup-time" min="12:00" max="20:00"><br>
           <label for="treats">Treats Bag</label>
-          <input id="treats" type="radio" /> Yes
-
-          <input id="treats" type="radio" /> No
+          <input id="treats" type="radio" name="treats" /> Yes
+          <input id="treats" type="radio" name="treats" /> No
+          <div class="button-wrapper"><button>Submit</button></div>
         </form>
       </section>
 
@@ -52,7 +59,7 @@
         <h3>CAT OF THE WEEK</h3>
         <img class="side-image" src="static/lesson04-mock3-sidebar-cat.jpg" alt="cat">
         <p>Stare at imaginary bug love blinks and purr purr purr purr.</p>
-        <p><a href="">Book Now >></a></p>
+        <p><a href="booking.html">Book Now >></a></p>
       </aside>
     </main>
 
