@@ -199,6 +199,10 @@ select {
     font-weight: bold;
 }
 
+nav > a:link { 
+    text-decoration: none; color: #3c3c3c; 
+}
+
 nav > a:visited { 
     text-decoration: none; color: #3c3c3c; 
 }
@@ -208,6 +212,10 @@ nav > a:hover {
 }
 
 nav > a:focus { 
+    text-decoration: none; color: #3c3c3c; 
+}
+
+nav > a:hover, a:link { 
     text-decoration: none; color: #3c3c3c; 
 }
 
