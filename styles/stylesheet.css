@@ -5,6 +5,25 @@ body {
     line-height: 1.5rem;
 }
 
+.hidden {
+    position:relative;
+    left: -1000px;
+    top: auto;
+}
+
+.hidden:focus {
+    left: 0;
+}
+
+.sr-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
 .articles-container {
     float: left;
     width: 67%;
@@ -89,6 +108,11 @@ nav {
     color: #3c3c3c;
 }
 
+.header-nav a {
+    padding: 2em;
+    font-size: large;
+}
+
 .footer-banner {
     z-index: 1;
     width: 100%;
@@ -101,6 +125,7 @@ nav {
     text-align: center;
     color: #ffffff;
     margin: 0 auto;
+    padding: 1em;
 
 }
 
@@ -223,20 +248,38 @@ nav > a:hover, a:active {
     text-decoration: none; color: #3c3c3c; 
 }
 
+nav.footer-nav > a:link { 
+    text-decoration: none;
+    color: #ffffff;     
+    padding: 1em;
+
+}
+
 nav.footer-nav > a:visited { 
-    text-decoration: none; color: #ffffff; 
+    text-decoration: none;
+    color: #ffffff; 
+    padding: 1em;
 }
 
 nav.footer-nav > a:hover { 
-    text-decoration: none; color: #ffffff; 
+    text-decoration: none; 
+    color: #ffffff; 
+    padding: 1em;
+
 }
 
 nav.footer-nav > a:focus { 
-    text-decoration: none; color: #ffffff; 
+    text-decoration: none;
+    color: #ffffff;
+    padding: 1em;
+
 }
 
 nav.footer-nav > a:hover, a:active { 
-    text-decoration: none; color: #ffffff; 
+    text-decoration: none;
+    color: #ffffff; 
+    padding: 1em;
+
 }
 
 aside > p > a:visited { text-decoration: none; color: #2f9db5;
