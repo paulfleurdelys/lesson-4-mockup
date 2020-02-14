@@ -30,23 +30,29 @@
       <section class="main-content-form">
         <h2 class="main-content-header">Book a Cat</h2>
         <p>Fill out the form below to book a cat in our system!</p>
-        </article>
         <form>
           <label for="name">Your Name</label>
           <input id="name" type="text" /><br>
           <label for="email">Your Email</label>
-          <input id="email" type="email" /><br>
-          <div class="button-wrapper"><select name="cat-list">
+          <input id="email" type="email" />
+          <label for="cat-list">Select Cat</label>
+          
+          <div class="button-wrapper">
+            <select name="cat-list" id="cat-list">
             <option value="Fuzzy">Fuzzy</option>
             <option value="Fluffy">Fluffy</option>
             <option value="Furball">Furball</option>
             <option value="Cat Sajak">Cat Sajak</option>
-            </select></div>
+            </select>
+          </div>
+
           <label for="pickup-time">Pickup Time</label>
           <input type="time" id="pickup-time" min="12:00" max="20:00"><br>
-          <label for="treats">Treats Bag</label>
-          <input id="treats" type="radio" name="treats" /> Yes
-          <input id="treats" type="radio" name="treats" /> No
+          <label>Treats Bag</label><br>
+          <label for="yes">Yes</label>
+          <input id="yes" type="radio" name="treats" /> 
+          <label for="no">No</label>
+          <input id="no" type="radio" name="treats" /> 
           <div class="button-wrapper"><button>Submit</button></div>
         </form>
       </section>
